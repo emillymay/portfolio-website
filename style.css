@@ -1,22 +1,20 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: "Pitchsans Regular", sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     max-width: 1400px;
-    display: block;
     margin: auto;
     min-height: 100vh;
     background: #1a1a1a;
-    font-family: "Pitchsans Regular", sans-serif;  
-
+    font-family: "Pitchsans Regular", sans-serif;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     position: fixed;
     top: 0;
@@ -28,13 +26,12 @@ body{
     background: #1a1a1a;
 }
 
-.link-group{
+.link-group {
     list-style: none;
     display: flex;
-
 }
 
-.link a{
+.link a {
     color: azure;
     opacity: 0.5;
     text-transform: capitalize;
@@ -45,7 +42,7 @@ body{
     font-size: 20px;
 }
 
-.home-heading{
+.home-heading {
     color: azure;
     font-size: 120px;
     text-transform: capitalize;
@@ -53,11 +50,9 @@ body{
     padding: 150px 150px;
     box-sizing: border-box;
     display: block;
-
-
 }
 
-.home-who{
+.home-who {
     color: lightblue;
     font-size: 20px;
     text-transform: capitalize;
@@ -66,22 +61,23 @@ body{
     box-sizing: border-box;
     display: inline;
 }
-.home-section.active{
-    position:relative;
+
+.home-section.active {
+    position: relative;
     z-index: 8;
-    
 }
 
-.home-section{
+.home-section {
     width: 100%;
     height: 100vh;
     padding: 100px 150px;
     display: flex;
-    top: 0px;
+    top: 0;
     position: relative;
     align-items: center;
 }
-.home{
+
+.home {
     width: 100%;
     display: block;
     padding: 100px 50px;
@@ -89,25 +85,24 @@ body{
     grid-template-columns: 30% 65%;
 }
 
-.home-info{
+.home-info {
     color: azure;
     font-size: 20px;
     line-height: 40px;
 }
 
 .home-img {
-position: absolute;
-top: 50px;
-right: 50px;
-height: 100vh;
-width: 50%;
-object-fit: cover;
-opacity: 0.2;
-margin: 20px 20px 20px 20px;
-
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.2;
+    margin: 20px;
 }
 
-.portfolio-section{
+.portfolio-section {
     width: 100%;
     min-height: 100vh;
     padding: 150px 100px 100px;
@@ -117,122 +112,8 @@ margin: 20px 20px 20px 20px;
     position: relative;
 }
 
-.project-heading{
+.project-heading {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
-    background: #252525;
-    text-transform: capitalize;
-    text-align:left;
-    margin-bottom: 10px;
-    color: #1a1a1a;
-    position:relative;
-    
-
-}
-
-.project-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1FR);
-
-}
-
-.project-content{
-    position: relative;
-    padding: 40px;
-    color: azure;
-    transition: .5s;
-}
-
-.project-title{
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
-    margin-left: 40px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    text-align: left;
-    align-items: left;
-    font-weight: 300;
-}
-
-.project-info{
-    margin-left: 40px;
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: start;
-    align-items: center;
-    width: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.project-img{
-    margin-left: 40px;
-    width: auto;
-    height: auto;
-    align-items: center;
-    border-width: 20px;
-    border-style: double;
-    border-color: aliceblue;
-}
-.about-section{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 0;
-    position: fixed;
-    top: 0;
-
-}
-
-.quote{
-    color: aliceblue;
-   align-items: right;
-    width: 50%;
-    line-height: 1.6;
-    position: fixed;
-    margin-left: 500px;
-    font-style: italic;
-    float: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode Italic', Geneva, Verdana, sans-serif;
-    
-}
-
-.about-img{
-    float: left;
-    border-color: aliceblue;
-    border-width: 20px;
-    border-style: double;
-    align-items: baseline;
-    margin: 100px 100px 100px 100px;
-}
- 
-.about-content{
- 
-    color: lightsteelblue;
-    align-items: baseline;
-    line-height: 1.5;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 200;
-    position: relative;
-    width: 50%;
-    margin-left: 100px;
-    float: left;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-}
-
-.about-imgme{
-    width: 400px;
-    height: 500px;
-    float: right; 
-    margin-top: auto;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    border-color: aliceblue;
-    border-width: 20px;
-    border-style: double;
+   
 }
