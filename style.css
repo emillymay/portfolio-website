@@ -1,1 +1,166 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling with Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.link-group {
+    list-style: none;
+    display: flex;
+}
+
+.link-group li {
+    padding: 0 20px;
+}
+
+.link-group a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* About Section Styling with CSS Grid */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Utilizing CSS Variables for Consistent Spacing and Colors */
+:root {
+    --spacing: 20px;
+    --accent-color: #f0f0f0;
+    --primary-color: #333;
+    --text-light: white;
+    --text-dark: #555;
+}
+
+.quote {
+    font-style: italic;
+    background-color: var(--accent-color);
+    padding: var(--spacing);
+    margin: 10px 0;
+    border-left: 5px solid var(--primary-color);
+}
+
+.about-img, .home-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-content, .home-content {
+    padding: 20px;
+}
+
+/* Advanced Selectors */
+.about-content p:nth-child(odd) {
+    color: var(--text-dark);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .navbar, .link-group {
+        flex-direction: column;
+    }
+
+    .link-group li {
+        padding: 10px 0;
+    }
+}
+
+/* Demonstrating Advanced CSS Rules */
+.about-content, .home-content {
+    padding: calc(var(--spacing) + 2vw);
+}
+
+.about-img:hover, .home-img:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Ensuring usage of various CSS units and advanced rules */
+.home-heading {
+    font-size: 2rem; /* Responsive font size */
+    margin: var(--spacing) auto;
+    text-align: center;
+}
+
+.home-who {
+    font-size: 1.5rem; /* Responsive font size */
+    color: var(--text-dark);
+    text-align: center;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Dark grey text */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Dark grey text */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
